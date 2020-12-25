@@ -1,8 +1,8 @@
 <div class="ui container">
   <div class="ui pointing secondary menu">
-    <div class="item">
+    <a class="item" routerLink="/">
       Email Service
-    </div>
+    </a>
     <div class="right menu">
       <ng-container *ngIf="signedIn$ | async">
         <a class="item" [routerLink]="['/inbox']" routerLinkActive="active" >Inbox</a>
